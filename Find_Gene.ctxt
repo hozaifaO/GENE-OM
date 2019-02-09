@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Find_Gene
+comment0.text=\n\ Write\ a\ description\ of\ Points\ here.\n\ \n\ @author\ Hozaifa\ Owaisi\ \n\ @version\ 1.0\n
+comment1.params=dna
+comment1.target=java.lang.String\ FindGene(java.lang.String)
+comment2.params=
+comment2.target=void\ testFind()
+numComments=3
