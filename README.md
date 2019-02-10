@@ -9,7 +9,7 @@ This is a Java Project that gives you a valid 3 multiple ATG Gene in a DNA seque
 4. Mathamatical Thinking in programing.
 5. Algorithum Building.
 
-# To Check out this project.
+## To Check out this project.
 1. Download or clone the repo
 2. Download a Java IDE.
 3. Open the Project in the IDE
