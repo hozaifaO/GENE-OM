@@ -47,10 +47,10 @@ public class Find_Gene{
         return -1;
     }
     
-    public static void main(String args) {
+    public static void main(String[] args) {
     
-        FileResource dna_file = new FileResource(args);
-        System.out.println(args);
+        FileResource dna_file = new FileResource();
+        System.out.println();
         String dna = dna_file.asString();
         Find_Gene gene = new Find_Gene();
         String result_gene = gene.FindGene(dna);
