@@ -14,10 +14,22 @@ public class Find_Gene{
         int taa_Index = firstStopCodon(dna,start_gene,"TAA");
         int tag_Index = firstStopCodon(dna,start_gene,"TAG");
         int tga_Index = firstStopCodon(dna,start_gene,"TGA");
-        int temp_min = Math.min(taa_Index,tag_Index);
-        int min_index = Math.min(temp_min,tga_Index);
-        if(min_index == dna.length()) {
-            return "NO GENE";
+        int min_index = 0;
+        //int temp_min = Math.min(taa_Index,tag_Index);
+        //int min_index = Math.min(temp_min,tga_Index);
+        if(taa_Index == -1 || tga_Index != -1 && tag_Index < taa_Index) {
+            min_index = tga_Index;
+        }
+        else {
+            min_index = taa_Index;
+        }
+        
+        if(min_index == -1 || tga_Index != -1 && tga_Index < min_index) {
+            min_index = tag_Index;
+        } 
+        
+        if(min_index == -1) {
+            return "NO GENES";
         }
         return dna.substring(start_gene,min_index+3);
     }
@@ -32,7 +44,7 @@ public class Find_Gene{
                 curr_Index = dna_sur.indexOf(StopCodon,curr_Index+1);
             }
         }
-        return dna_sur.length();
+        return -1;
     }
     
     public static void main(String args) {
