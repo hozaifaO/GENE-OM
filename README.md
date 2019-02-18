@@ -1,6 +1,6 @@
 ![DNA](https://cdn.dribbble.com/users/1626229/screenshots/5182140/attachments/1135140/dna_challenge_copia.jpg)
 # GENE-OM
-This is a Java Project that gives you a valid 3 multiple ATG Gene in a DNA sequence file. IT takes one file as input and gives you the Gene Sequence in the DNA with all the 3 different types of ending genes.
+This is a Java Project that gives you a valid Gene of 3 multiple in a DNA sequence file. IT takes one file as input and gives you the Gene Sequence in the DNA with all the 3 different types of ending genes.
 
 ## Things that i learned
 1. Java Classes and types of variables.
